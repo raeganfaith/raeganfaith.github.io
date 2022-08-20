@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,500&display=swap');
+
+*{
+  color: #FAD9A1;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;  
+  text-decoration: none;
+  /* box-sizing: border-box;
+  scroll-behavior: smooth; */
+  margin: 0;
+  padding: 0;
+}
+
+/* Class Helper for easy padding adjustment */
+.p--sm {
+  padding: 10px;
+}
+.p--md{
+  padding: 20px;
+}
+.p--lg{
+  padding: 30px;
+}
+.pl--sm {
+  padding-left: 10px;
+}
+.pl--md {
+  padding-left: 20px;
+}
+.pl--lg {
+  padding-left: 30px;
+}
+.pr--sm {
+  padding-right: 10px;
+}
+.pr--md{
+  padding-right: 20px;
+}
+.pr--lg{
+  padding-right: 30px;
+}
+.pt--none{
+  padding-top: 0%;
+}
+.pt--sm{
+  padding-top: 10px;
+}
+.pt--md{
+  padding-top: 20px;
+}
+.pt--lg{
+  padding-top: 30px;
+}
+.pb--none {
+  padding-bottom: 0%;
+}
+.pb--sm{
+  padding-bottom: 10px;
+}
+.pb--md{
+  padding-bottom: 20px;
+}
+.pb--lg{
+  padding-bottom: 30px;
+}
+
+/* For Grid Layout */
+.grid-container{
+  display: grid;  
+  width: 100%;
+}
+.grid-container > div {
+  height: 100%;
+}
+.column--12{
+  grid-column: span 12;
+  grid-row: 1;
+}
+.column--10{
+  grid-column: span 10;
+  grid-row: 1;
+}
+.column--8{
+  grid-column: span 8;
+  grid-row: 1;
+}
+.column--6{
+  grid-column: span 6;
+  grid-row: 1;
+}
+.column--4{
+  grid-column: span 4;
+  grid-row: 1;
+}
+.column--2{
+  grid-column: span 2;
+  grid-row: 1;
+}
+/* For Flex Layout */
+.flex-container{
+  display: flex;
+}
+.flex-container > div {
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin: 0;
+}
+.flex--sm {
+  flex-basis: 20%;
+}
+.flex--md {
+  flex-basis: 30%;
+}
+.flex--lg {
+    flex-basis: 50%;
+}
+
+/* Specifics */
+body{
+  background-color: #F37878;
+}
+
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: #FAD9A1;
+}
+
+nav p a{
+  color: #F37878;
+  font-size: 24px;
+  line-height: 55px;
+  padding:0px 20px;
+  float: left;
+  font-weight: 500;
+}
+
+nav ul{
+  float: right; 
+  padding-right: 30px;
+}
+
+nav ul li{
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a{
+  display: block;
+  color: #F37878;
+  font-size: 17px;
+  padding: 15px 14px;
+}
+
+nav ul li ul{
+  display: none;
+  position: absolute; 
+  background-color: #FAD9A1;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+nav ul li:hover ul{
+  display: block;
+}
+
+nav ul li ul li{
+  width: 80px;
+  /* padding: 0%; */
+
+}
+
+nav ul li ul li a:hover{
+  /* background-color: #F9F9C5; */
+  font-weight: 600;
+}
+
+nav ul li a:hover{
+  font-weight: 600;
+}
+
+nav p a:hover{
+  font-weight: 600;
+}
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header h1{
+  text-align: center;
+  border: 10px solid #FAD9A1;
+  background-color: #D9F8C4;
+  color: #F37878;
+  border-radius: 0px 0px 30px 30px;
+  padding: 10px;
+}
+.hero-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  max-width: 959px;
+  margin: 0 auto;
+  border: 10px solid #FAD9A1;
+  border-radius: 30px 30px 0px 0px;
+  padding: 10px;
+}
+.hero-container img{
+  border-radius: 200px;
+  border: 10px double #FAD9A1;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-container img {
+  width: 300px;
+}
+
+.skills-header{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  max-width: 959px;
+  margin: 0 auto;
+  background-color: #FAD9A1;
+  border: 10px solid #FAD9A1;
+  padding: 10px;
+}
+.skills-header h1{
+  color: #F37878;
+}
+
+.skills{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  max-width: 959px;
+  margin: 0 auto;
+  border: 10px solid #FAD9A1;
+  padding: 10px;
+}
+
+.skills img {
+  padding: 20px;
+}
+
+/* Gallery */
+.gallery{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+}
+.gallery h1{
+  text-align: center;
+  border: 10px solid #FAD9A1;
+  background-color: #D9F8C4;
+  color: #F37878;
+  border-radius: 0px 0px 30px 30px;
+  padding: 10px;
+}
+.gallery img{
+  width: 300px;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  max-width: 981px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.image-container img{
+  border: 10px solid #FAD9A1;
+  border-bottom: 50px solid #FAD9A1;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.skill-set{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 10px solid #FAD9A1;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.borders{
+  border: 10px solid #FAD9A1;
+  padding: 10px;
+}
+
+.trivia .motto{
+  font-style: italic;
+}
+
+.contacts{
+  display: flex;
+  justify-content: center;
+  border: 10px solid #FAD9A1;
+  max-width: 980px;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: #D9F8C4;
+  border-radius: 0px 0px 30px 30px;
+}
+.contacts h1{
+  text-align: center;
+  color: #F37878;
+}
+.contacts img{
+  flex-direction: row;
+}
+.contacts-logo{
+  display: flex;
+  justify-content: center;
+}
+.contacts-logo img{
+  padding: 20px;
+}
