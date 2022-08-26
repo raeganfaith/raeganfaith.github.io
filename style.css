@@ -336,3 +336,40 @@ nav p a:hover{
 .contacts-logo img{
   padding: 20px;
 }
+
+.button {
+  background-color: #F37878; 
+  border: 5px solid #FAD9A1;
+  color: #FAD9A1;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
+.string-con{
+  display: grid;
+  border: 10px solid #FAD9A1;
+  border-radius: 30px;
+  padding: 10px;
+  width: 80%;
+  margin: auto; 
+}
+.basic-math{
+  display: grid;
+  border: 10px solid #FAD9A1;
+  border-radius: 30px;
+  padding: 10px;
+  width: 60%;
+  margin: auto; 
+}
+.question{
+  display: grid;
+  justify-content: center;
+  padding:15px
+}
+
+.question button{
+  margin-bottom: 10px
+}
