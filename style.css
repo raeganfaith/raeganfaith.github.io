@@ -165,9 +165,7 @@ nav ul li:hover ul{
 }
 
 nav ul li ul li{
-  width: 100px;
-  /* padding: 0%; */
-
+  width: 118px;
 }
 
 nav ul li ul li a:hover{
@@ -376,7 +374,7 @@ nav p a:hover{
 
 input {
   resize: horizontal;
-  width: 100px;
+  max-width: 100px;
   height: 50px;
   background-color: #F37878;
   border: 2px solid #FAD9A1;
@@ -401,13 +399,10 @@ input:focus {
   border: 10px solid #FAD9A1;
   border-radius: 30px;
   padding: 10px;
-  width: 100%;
+  width: 96%;
   margin: auto; 
 }
-.answers{
-  display: flex;
-  justify-content: center;
-}
+
 .answers{
   display: flex;
   justify-content: center;
