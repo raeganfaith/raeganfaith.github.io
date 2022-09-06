@@ -181,9 +181,18 @@ nav p a:hover{
   font-weight: 600;
 }
 .container{
+  display: flex;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+
+}
+.grade-container{
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-direction: column;
 }
 .header{
   width: 100%;
@@ -346,6 +355,10 @@ nav p a:hover{
   font-size: 16px;
   border-radius: 15px;
 }
+.button:hover{
+  background-color: #D9F8C4;
+  color:#F37878;
+}
 .string-con{
   display: grid;
   border: 10px solid #FAD9A1;
@@ -411,4 +424,40 @@ input:focus {
 }
 .answers h2{
   padding: 12px;
+}
+
+.interaction{
+  display: grid;
+  border: 10px solid #FAD9A1;
+  border-radius: 30px;
+  padding: 10px;
+  width: 80%;
+  margin: auto; 
+}
+
+.texts{
+  padding: 18px;
+}
+.texts h2{
+  padding: 15px;
+}
+
+.textbox{
+  padding: 15px;
+}
+
+.textbox .input-container{
+  padding: 10px;
+}
+.grade{
+  padding-top: 80px;
+}
+.solo-button{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.solo-button .button{
+  width: 75%;
 }

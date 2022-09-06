@@ -248,3 +248,25 @@ function divide4(){
 
   document.getElementById("answer20").innerHTML = "OUTPUT: " + result;
 }
+
+//Grading System
+function Average(){
+  var number1 = document.getElementById("assignment").value;
+  var number2 = document.getElementById("seatwork").value;
+  var number3 = document.getElementById("activity").value;
+  var number4 = document.getElementById("exam").value;
+  var sum = parseFloat(number1) + parseFloat(number2) + parseFloat(number3) + parseFloat(number4);
+  var average = sum/4;
+
+  document.getElementById("average").innerHTML = "Average: " + average;
+  
+  if(average<60){
+    document.getElementById("status").innerHTML = "Grade Status: FAILED"
+  } else if(average>60){
+    document.getElementById("status").innerHTML = "Grade Status: PASSED"
+  } else{
+    document.getElementById("average").innerHTML = "Average: INC"
+    document.getElementById("status").innerHTML = "Grade Status: INC"
+  }
+
+}
