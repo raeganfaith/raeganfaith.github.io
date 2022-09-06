@@ -262,7 +262,7 @@ function Average(){
   
   if(average<60){
     document.getElementById("status").innerHTML = "Grade Status: FAILED"
-  } else if(average>60){
+  } else if(average>60 || average==60){
     document.getElementById("status").innerHTML = "Grade Status: PASSED"
   } else{
     document.getElementById("average").innerHTML = "Average: INC"
