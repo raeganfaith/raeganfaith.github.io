@@ -181,7 +181,6 @@ nav p a:hover{
   font-weight: 600;
 }
 .container{
-  display: flex;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
