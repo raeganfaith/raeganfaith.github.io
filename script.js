@@ -269,4 +269,20 @@ function Average(){
     document.getElementById("status").innerHTML = "Grade Status: INC"
   }
 
+  if(average<60){
+    document.getElementById("equivalent").innerHTML = "Grade Equivalent: F"
+  } else if(average<60 || average<=74 ){
+    document.getElementById("equivalent").innerHTML = "Grade Equivalent: E"
+  } else if(average<=75 || average<=80 ){
+    document.getElementById("equivalent").innerHTML = "Grade Equivalent: D"
+  } else if(average<=81 || average<=86 ){
+    document.getElementById("equivalent").innerHTML = "Grade Equivalent: C"
+  } else if(average<=87 || average<=92 ){
+    document.getElementById("equivalent").innerHTML = "Grade Equivalent: B"
+  } else if(average<=93 || average<=100 ){
+    document.getElementById("equivalent").innerHTML = "Grade Equivalent: A"
+  } else{
+    document.getElementById("equivalent").innerHTML = "Grade Equivalent: INC"
+  }
+
 }
